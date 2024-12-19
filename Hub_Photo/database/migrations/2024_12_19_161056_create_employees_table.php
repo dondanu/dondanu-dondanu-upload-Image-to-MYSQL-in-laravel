@@ -16,7 +16,10 @@ return new class extends Migration
             $table->string('name');
             $table->string('address');
             $table->string('mobile');
-            $table->string('photo',300);
+           
+            $table->string('gender');
+            $table->string('index');
+            $table->string('photo', 300);
             $table->timestamps();
         });
     }
