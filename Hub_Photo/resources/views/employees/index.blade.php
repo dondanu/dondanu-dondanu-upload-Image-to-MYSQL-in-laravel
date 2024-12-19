@@ -1,21 +1,22 @@
 @extends('employees.layout')
 @section('content')
 <div style="
-    background: url('/images/h.jpg') no-repeat center center fixed;
-    background-size: cover; 
-    min-height: 100vh; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: url('/images/v.jpg') no-repeat center center fixed; 
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    z-index: -1;">
+</div>
+
+<div style="
+    height: 100%; 
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    font-family: Arial, sans-serif;
-    position: relative;">
-    
-    <!-- Wave Animation -->
-    <div style="position: absolute; bottom: 0; width: 100%; overflow: hidden; line-height: 0;">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="width: 100%; height: 120px;">
-            <path d="M0,96L120,112C240,128,480,160,720,165.3C960,171,1200,149,1320,133.3L1440,118L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z" fill="rgba(45,199,226,0.8)"></path>
-        </svg>
-    </div>
+    font-family: Arial, sans-serif;">
 
     <div style="
         width: 90%; 
@@ -26,7 +27,7 @@
         overflow: hidden; 
         position: relative; 
         z-index: 2;">
-        
+
         <div style="
             background: linear-gradient(135deg, rgba(45, 199, 226, 0.9), rgba(40, 167, 69, 0.9)); 
             padding: 20px; 
