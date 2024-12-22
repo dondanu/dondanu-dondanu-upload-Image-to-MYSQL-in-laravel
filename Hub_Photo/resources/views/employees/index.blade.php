@@ -1,4 +1,5 @@
 @extends('employees.layout')
+
 @section('content')
 <div style="
     position: absolute; 
@@ -81,6 +82,7 @@
                             <th style="padding: 10px; border: 1px solid rgba(255, 255, 255, 0.2);">Gender</th>
                             <th style="padding: 10px; border: 1px solid rgba(255, 255, 255, 0.2);">Index</th>
                             <th style="padding: 10px; border: 1px solid rgba(255, 255, 255, 0.2);">Photo</th>
+                            <th style="padding: 10px; border: 1px solid rgba(255, 255, 255, 0.2);">QR Code</th> <!-- New column for QR code -->
                         </tr>
                     </thead>
                     <tbody>
@@ -95,6 +97,9 @@
                             <td style="padding: 10px; border: 1px solid rgba(0, 0, 0, 0.1);">
                                 <img src="{{ asset($item->photo) }}" width="50" height="50" style="border-radius: 50%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);" />
                             </td>
+                            <td style="padding: 10px; border: 1px solid rgba(0, 0, 0, 0.1);">
+                                <img src="{{ asset($item->qr_code) }}" width="50" height="50" style="border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);" />
+                            </td> <!-- Display the QR code -->
                         </tr>
                         @endforeach
                     </tbody>
