@@ -44,7 +44,16 @@
                             </td>
                             <td style="padding: 10px; border: 1px solid rgba(0, 0, 0, 0.1);">
                                 <!-- Display QR Code -->
-                                <img src="{{ asset($item->qr_code) }}" width="50" height="50" style="border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);" />
+                               
+                                <img src="{{ asset('images/qr_codes/' . basename($item->qr_code)) }}" alt="QR Code" width="50" height="50" style="border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);" />
+
+                                
+
+
+
+
+
+
                             </td>
                         </tr>
                         @endforeach
