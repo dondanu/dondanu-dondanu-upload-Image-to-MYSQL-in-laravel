@@ -46,14 +46,6 @@ class EmployeeController extends Controller
     $path = $request->file('photo')->storeAs('images', $fileName,'public');
     $requestData["photo"] = '/storage/'.$path;
 
-     // Generate QR code content
-     $qrCodeContent = "Name: {$request->name}, Address: {$request->address}, Mobile: {$request->mobile}";
-
-     // Save QR code image in public/qr-codes
-     $qrCodePath = 'qr-codes/' . time() . '-qr.png';
-     QrCode::format('png')->size(200)->generate($qrCodeContent, public_path($qrCodePath));
-     $requestData["qr_code"] = $qrCodePath;
-
     Employee::create($requestData);
     return redirect('employee')->with('flash_message', 'EmployeeAddedd!');
     }
