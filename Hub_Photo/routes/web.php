@@ -13,6 +13,7 @@ Route::get('/employee/see', [EmployeeController::class, 'seeAllEmployees']);
 
 Route::resource("/employee", EmployeeController::class);
 
+Route::get('/employees/export', [EmployeeController::class, 'export'])->name('employees.export');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

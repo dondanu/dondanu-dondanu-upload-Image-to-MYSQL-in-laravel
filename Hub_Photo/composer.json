@@ -10,6 +10,7 @@
         "endroid/qr-code": "^5.0",
         "laravel/framework": "^11.31",
         "laravel/tinker": "^2.9",
+        "maatwebsite/excel": "^3.1",
         "simplesoftwareio/simple-qrcode": "^4.2"
     },
     "require-dev": {

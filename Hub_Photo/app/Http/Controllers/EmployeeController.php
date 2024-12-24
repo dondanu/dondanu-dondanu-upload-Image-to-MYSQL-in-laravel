@@ -8,6 +8,9 @@ use Endroid\QrCode\QrCode;
 use Illuminate\Support\Facades\Log;
 use Endroid\QrCode\Writer\PngWriter;
 
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\EmployeeExport;
+
 class EmployeeController extends Controller
 {
     /**
@@ -169,5 +172,14 @@ class EmployeeController extends Controller
 
         // employees தரவை பார்வைக்கு அனுப்புக
         return view('employees.see', compact('employees')); // employees மாறியை பார்வைக்கு அனுப்புக
+    }
+
+    public function export()
+    {
+        try {
+            return Excel::download(new EmployeeExport, 'employees.xlsx');
+        } catch (\Exception $e) {
+            return response()->json(['error' => $e->getMessage()], 500);
+        }
     }
 }
