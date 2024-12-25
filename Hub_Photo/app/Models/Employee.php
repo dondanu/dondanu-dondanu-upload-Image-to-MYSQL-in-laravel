@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Employee extends Model
 {
-    protected $table = 'employees';  // Specify the table name
-    protected $primarykey = 'id';    // Corrected property name (capital 'K')
+    protected $table = 'employees';  // Table name
+    protected $primaryKey = 'id';    // Primary key
     protected $fillable = ['name', 'address', 'mobile', 'gender', 'index', 'photo', 'qr_code'];  // Fields that can be mass-assigned
-    use HasFactory;  // Enables factory features in Laravel
+    use HasFactory;  // Enables Laravel factories for model testing/creating fake records
 }
