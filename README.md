@@ -16,16 +16,28 @@ Here are some screenshots of the **AcademiQR** application:
 <img src="a.png" alt="Dashboard Screenshot">
 <p><em>Example of the dashboard view.</em></p>
 
-<img src="student_list.png" alt="Student List Screenshot">
+<img src="a2.png" alt="Student Login Screenshot">
 <p><em>View of the student list.</em></p>
 
-<img src="student_profile.png" alt="Student Profile Screenshot">
+<img src="a3.png" alt="Student Foget Password Screenshot">
 <p><em>Detailed student profile view.</em></p>
 
-<img src="pdf_download.png" alt="PDF Download Screenshot">
+<img src="a4.png" alt="Registration Screenshot">
 <p><em>Download student details in PDF format.</em></p>
 
-<img src="qrcode_example.png" alt="QR Code Screenshot">
+<img src="a5.png" alt="Profile Screenshot">
+<p><em>Generated QR code for student details.</em></p>
+
+<img src="a6.png" alt="Profile Screenshot">
+<p><em>Generated QR code for student details.</em></p>
+
+<img src="a7.png" alt="Add new Screenshot">
+<p><em>Generated QR code for student details.</em></p>
+
+<img src="a8.png" alt="QR Screenshot">
+<p><em>Generated QR code for student details.</em></p>
+
+<img src="a9.png" alt="Details Screenshot">
 <p><em>Generated QR code for student details.</em></p>
 
 ## Installation
