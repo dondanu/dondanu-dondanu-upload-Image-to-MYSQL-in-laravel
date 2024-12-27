@@ -167,17 +167,17 @@ class EmployeeController extends Controller
     
     public function seeAllEmployees()
     {
-        // அனைத்து ஊழியர்களையும் பெறுக
+        
         $employees = Employee::all();
 
-        // employees தரவை பார்வைக்கு அனுப்புக
+        
         return view('employees.see', compact('employees')); // employees மாறியை பார்வைக்கு அனுப்புக
     }
 
     public function export()
     {
         try {
-            return Excel::download(new EmployeeExport, 'employees.xlsx');
+            return Excel::download(new EmployeeExport, 'Students Records.xlsx');
         } catch (\Exception $e) {
             return response()->json(['error' => $e->getMessage()], 500);
         }

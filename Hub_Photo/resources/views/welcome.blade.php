@@ -141,7 +141,7 @@
 <nav>
     <div class="left">
     <!-- resources/views/welcome.blade.php -->
-<a href="{{ url('/employee/see') }}" class="btn">Guest</a>
+<a href="{{ url('/employee/see') }}" class="btn">Exam Division</a>
 
     </div>
     
