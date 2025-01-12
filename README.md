@@ -58,7 +58,7 @@ Here are some screenshots of the **AcademiQR** application:
    
 2. Navigate to the project folder:
    ```bash
-   cd AcademiQR
+   cd Hub_Photo
 
 3. Install dependencies using Composer:
    ```bash
