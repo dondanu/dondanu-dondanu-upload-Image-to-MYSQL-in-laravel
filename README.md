@@ -51,32 +51,38 @@ Here are some screenshots of the **AcademiQR** application:
 
 ### Setup Instructions
 
-1. **Clone the repository:**
 
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/dondanu/dondanu-dondanu-upload-Image-to-MYSQL-in-laravel
+   
+2. Navigate to the project folder:
    ```bash
-   git clone https://github.com/your-username/AcademiQR.git
-
-2. Navigate to the project directory:
-    cd AcademiQR
+   cd AcademiQR
 
 3. Install dependencies using Composer:
-    composer install
+   ```bash
+   composer install  
 
 4. Set up your .env file:
-    Copy .env.example to .env:
-    cp .env.example .env
+   Copy .env.example to .env:
+   ```bash
+   cp .env.example .env   
 
-5. Update the .env file with your database credentials.
-    Generate the application key:
-    php artisan key:generate
+6. Update the .env file with your database credentials.
+   Generate the application key:
+   ```bash
+   php artisan key:generate
 
-6. Run database migrations:
-    php artisan migrate
+7. Run database migrations:
+   ```bash
+   php artisan migrate
 
-7. Serve the application:
-    php artisan serve
+8. Serve the application:
+   ```bash
+   php artisan serve
    
-Your application should now be accessible at http://localhost:8000.
+9. Your application should now be accessible at http://localhost:8000.
 
 
 
